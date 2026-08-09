@@ -1,6 +1,6 @@
 ---
 language: "en"
-title: "Why \"Server\" Is Not a Computer - But a Role That Changes Form"
+title: "Why \"Server\" Is Not a Computer - But a Role That Changes Hosts"
 categories:
   - "Infrastructure Nobody Explains"
 tags:
@@ -10,7 +10,7 @@ tags:
 slug: "server-not-computer-en"
 ---
 
-# Why "Server" Is Not a Computer - But a Role That Changes Form
+# Why "Server" Is Not a Computer - But a Role That Changes Hosts
 
 When you hear the word "server", it sounds straightforward.
 Something that sits somewhere, runs software, and serves requests.
@@ -25,7 +25,7 @@ A server is a computer.
 
 A physical computer, with an IP address, a disk, and memory.
 If it crashes - "the server went down".
-If it's slow - "the server is weak".
+If it's slow - "the server is underpowered".
 
 This assumption feels natural.
 And it's also wrong.

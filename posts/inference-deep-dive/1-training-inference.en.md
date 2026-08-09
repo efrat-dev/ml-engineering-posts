@@ -8,7 +8,7 @@ tags:
   - "Inference Deep Dive"
 series: "Inference Deep Dive"
 previousPost: "null"
-nextPost: "2-how-inference-works"
+nextPost: "2-how-inference-works-en"
 slug: "1-training-inference-en"
 ---
 

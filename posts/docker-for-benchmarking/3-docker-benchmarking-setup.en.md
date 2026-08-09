@@ -61,4 +61,4 @@ Docker allows you to run everything in a controlled manner and save all the data
 Docker turns benchmarking from “an experiment on my machine” into precise science.
 When combined with GPU support, it allows for truly fair testing
 of which engine or model delivers the best performance -
-without noise, surprises, and with full confidence in the result.
+without noise or surprises, and with full confidence in the result.

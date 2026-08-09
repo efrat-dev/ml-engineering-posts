@@ -54,7 +54,7 @@ This way, each thread “stays home,” retains its cache, and the processor spe
 In inference systems, especially those serving many requests simultaneously, proper core management can:
 
 - Significantly reduce latency.
-- Increase throughput (number of predictions per second).
+- Increase throughput (number of tokens generated per second).
 - Maintain stability - ensuring each request gets consistent processing time without sudden spikes or delays.
 
 ## Bottom Line

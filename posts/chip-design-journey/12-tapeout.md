@@ -59,7 +59,7 @@ Tapeout הוא שלב שבו:
 
 הקובץ נקרא:
 
-**GDSII - Graphic Data System II**
+**GDSII - Graphic Database System II**
 
 זהו פורמט שמתאר:
 

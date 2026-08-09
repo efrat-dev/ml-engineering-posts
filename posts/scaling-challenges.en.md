@@ -2,7 +2,7 @@
 language: "en"
 title: "The Challenges of Scaling - Why “More” Can Sometimes Be Less"
 categories:
-  - "אופטימיזציית חומרה"
+  - "Hardware Optimization"
 tags:
   - "Scaling"
 previousPost: "scaling-ai.en"

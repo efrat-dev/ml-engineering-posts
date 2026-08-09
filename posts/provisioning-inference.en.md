@@ -11,7 +11,7 @@ slug: "provisioning-inference-en"
 ---
 
 
-# ⚙️ Provisioning - Preparing the Ground Before Running Models
+# Provisioning - Preparing the Ground Before Running Models
 
 Before an AI model even starts running, the environment it will work in needs to be “set up.”
 This stage is called Provisioning - essentially the process of allocating and preparing computing resources.
@@ -21,10 +21,10 @@ This stage is called Provisioning - essentially the process of allocating and pr
 Provisioning determines where and under what conditions the model will run.
 This includes:
 
-- 📦 Allocating servers, GPUs, or CPUs
-- 💾 Connecting to data storage
-- 🌐 Configuring networks, IP addresses, and permissions
-- 🧠 Loading models into memory
+- Allocating servers, GPUs, or CPUs
+- Connecting to data storage
+- Configuring networks, IP addresses, and permissions
+- Loading models into memory
 
 Think of it like preparing a stage before a performance -
 before the actors (models) come on, you need lights, microphones, power, and order.
@@ -56,10 +56,10 @@ The user doesn’t see any servers at all - the service itself manages all alloc
 When you send a request to a GPT or BERT model,
 this happens behind the scenes:
 
-1️⃣ Kubernetes or another management system detects a new request.
-2️⃣ It allocates a free GPU.
-3️⃣ Loads the model into memory.
-4️⃣ Only then does the actual inference begin.
+1. Kubernetes or another management system detects a new request.
+2. It allocates a free GPU.
+3. Loads the model into memory.
+4. Only then does the actual inference begin.
 
 All of this - real-time provisioning.
 

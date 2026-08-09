@@ -8,7 +8,7 @@ tags:
   - "Batching"
 series: "Inference Deep Dive"
 previousPost: "4-bottlenecks-in-inference.en"
-nextPost: "6-inference-engines"
+nextPost: "6-inference-engines-en"
 slug: "5-inference-optimization-en"
 ---
 

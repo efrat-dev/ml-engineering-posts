@@ -59,7 +59,7 @@ Tapeout is a stage where:
 
 The file is called:
 
-**GDSII - Graphic Data System II**
+**GDSII - Graphic Database System II**
 
 This is a format that describes:
 

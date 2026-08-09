@@ -1,6 +1,6 @@
 ---
 language: "he"
-title: "Thread Affinity - How to Bind Cores Smartly"
+title: "Thread Affinity - איך מצמידים תהליכים לליבות בצורה חכמה"
 categories:
   - "למידת מכונה"
   - "חומרה"
@@ -15,50 +15,50 @@ slug: "6-thread-affinity"
 ---
 
 
-# Thread Affinity - How to Bind Cores Smartly
+# Thread Affinity - איך מצמידים תהליכים לליבות בצורה חכמה
 
-In the previous post, we explained why it’s important for each thread to stay bound to a specific core - to preserve the cache and avoid performance loss.
-Now let’s dive into the practical question: how do you do it right?
+בפוסט הקודם הסברנו למה חשוב שכל thread יישאר צמוד לליבה מסוימת - כדי לשמור על ה-cache ולמנוע אובדן ביצועים.
+עכשיו נצלול לשאלה המעשית: איך עושים את זה נכון?
 
-## What is Thread Affinity?
+## מה זה Thread Affinity?
 
-Thread Affinity means restricting a thread to a fixed core or group of cores, so the operating system doesn’t move it between cores.
-This prevents unnecessary context switching, keeps the cache stable, and allows the processor to work continuously without “disruptions.”
+Thread Affinity הוא הצמדה של thread לליבה קבועה או לקבוצת ליבות מוגדרת, כך שמערכת ההפעלה לא מעבירה אותו בין ליבות.
+זה מונע context switching מיותר, שומר על יציבות ה-cache, ומאפשר למעבד לעבוד ברצף בלי "הפרעות".
 
-## How Does It Work Behind the Scenes?
+## איך זה עובד מאחורי הקלעים?
 
-Every processor includes multiple physical cores, each with shared resources - like cache, memory controllers, and NUMA nodes (a topic we’ll expand on later).
-When a thread “jumps” to another core, it loses all these local advantages.
+בכל מעבד יש כמה ליבות פיזיות, וכל אחת מהן חולקת משאבים מסוימים - כמו cache, בקרי זיכרון, ו-NUMA nodes (נושא שנעמיק בו בהמשך).
+כשthread "קופץ" לליבה אחרת, הוא מאבד את כל היתרונות המקומיים האלה.
 
-By setting affinity, we’re essentially telling the system:
+כשקובעים affinity, בעצם אומרים למערכת:
 
-“Don’t touch this - this thread belongs to this core.”
+"אל תיגעי בזה - ה-thread הזה שייך לליבה הזו."
 
-In practice, this is done by mapping threads to cores, often through configuration or a dedicated library (e.g., `taskset` in Linux or settings in the runtime environment of an inference engine).
+בפועל, זה נעשה על ידי מיפוי בין threads לליבות, בדרך כלל דרך קונפיגורציה או ספרייה ייעודית (למשל `taskset` בלינוקס, או הגדרות בסביבת ה-runtime של מנוע ה-inference).
 
-## When is This Especially Critical?
+## מתי זה קריטי במיוחד?
 
-- When running heavy inference models (e.g., Transformer models) that perform multi-step computations on the same data.
-- When there are many concurrent requests (high concurrency) - such as an inference server serving hundreds of users.
-- In systems with multiple NUMA nodes - where migrating between different memory regions can dramatically impact response time.
+- כשמריצים מודלים כבדים (כמו מודלי Transformer) שמבצעים חישובים מרובי-שלבים על אותם נתונים.
+- כשיש הרבה בקשות במקביל (concurrency גבוה) - כמו שרת inference שמשרת מאות משתמשים.
+- במערכות עם כמה NUMA nodes - שם מעבר בין אזורי זיכרון שונים יכול להשפיע דרמטית על זמן התגובה.
 
-## How to Decide What to Bind to What?
+## איך מחליטים מה מצמידים למה?
 
-- **Separate critical threads from supporting ones:**
-  For example, certain cores are allocated for computation, while others handle communication (I/O).
-- **Use core groups:**
-  If there are 32 cores, you can define groups of 4-8 cores per model, depending on the load.
-- **Iterative testing:**
-  Start with basic binding - then measure latency and throughput.
-  Every small change in allocation can significantly impact performance.
+- **מפרידים threads קריטיים מ-threads תומכים:**
+  לדוגמה, ליבות מסוימות מוקצות לחישוב, בעוד אחרות מטפלות בתקשורת (I/O).
+- **משתמשים בקבוצות ליבות:**
+  אם יש 32 ליבות, אפשר להגדיר קבוצות של 4-8 ליבות למודל, בהתאם לעומס.
+- **בודקים באופן איטרטיבי:**
+  מתחילים מהצמדה בסיסית - ואז מודדים latency ו-throughput.
+  כל שינוי קטן בהקצאה יכול להשפיע משמעותית על הביצועים.
 
-## Pro Tip
+## טיפ מקצועי
 
-Sometimes, optimizing Thread Affinity won’t improve performance - it might even hurt it if it causes overcrowding (i.e., too many threads on too few cores).
-That’s why it’s always worth measuring in practice - there’s no substitute for accurate benchmarking.
+לפעמים אופטימיזציה של Thread Affinity לא תשפר ביצועים - ואפילו עלולה לפגוע בהם, אם היא יוצרת צפיפות (יותר מדי threads על פחות מדי ליבות).
+לכן תמיד שווה למדוד בפועל - אין תחליף ל-benchmarking מדויק.
 
-## Bottom Line
+## בשורה התחתונה
 
-Thread Affinity is a simple yet powerful tool:
-It doesn’t require new code, just proper management of existing resources.
-In a system where every millisecond counts, controlling where each thread runs can be the difference between a model that “works” and a model that “flies.”
+Thread Affinity הוא כלי פשוט אך עוצמתי:
+הוא לא דורש קוד חדש, רק ניהול נכון של המשאבים הקיימים.
+במערכת שבה כל מילישנייה נחשבת, שליטה במקום שבו כל thread רץ יכולה להיות ההבדל בין מודל ש"עובד" למודל ש"עף".

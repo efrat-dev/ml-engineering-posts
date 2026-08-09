@@ -1,136 +1,101 @@
 ---
 language: "en"
-title: "How Do You Actually 'Write' Hardware? The First Step to Understanding RTL and the Frontend World"
+title: "Hardware vs. Software - The Basic Differences Anyone Coming from Code Needs to Understand"
 categories:
   - "Chip Design"
 tags:
-  - "RTL"
-  - "Frontend"
+  - "Hardware"
+  - "Software"
 series: "Chip Design Journey"
 previousPost: "chip-design-journey/2-what-is-soc.en"
+nextPost: "chip-design-journey/4-what-is-frontend.en"
 slug: "3-hardware-vs-software-en"
 ---
 
-# How Do You Actually "Write" Hardware? The First Step to Understanding RTL and the Frontend World
+# Hardware vs. Software - The Basic Differences Anyone Coming from Code Needs to Understand
 
-If you come from the software world, the most natural question is:
+In the previous post, we talked about SoC - a chip that contains an entire world of computing units.
 
-**How can you write hardware?**
+But before diving into how you actually design and build something like that, let's pause and understand a basic difference:
 
-After all, hardware is something physical, with transistors and wires…
-So how does this relate to code?
+**What actually separates "writing software" from "designing hardware"?**
 
-To answer this - we need to understand a very basic difference.
+This isn't a small technical question. It's the starting point from which everything else in this series - RTL, architecture, Verification - starts to make sense.
 
-## Software Runs. Hardware Behaves.
+## A Software Engineer Thinks Sequentially. A Hardware Engineer Thinks in Parallel
 
-**In software**, you write commands, and the processor executes them one after another.
+**In software**, in most cases, there's a flow of execution:
 
-**In hardware**, you don't "run code".
-Instead - you describe logical behavior that later becomes an actual circuit.
+Command 1 → Command 2 → Command 3 → Result.
 
-Therefore, hardware languages are completely different from regular programming languages.
+Even with threads or async code, the underlying habit of mind is "what happens first, what happens next."
 
-## What is RTL?
+**In hardware, this concept doesn't exist at all.**
 
-**RTL = Register Transfer Level**
-This is a description method where a hardware engineer writes:
+Millions of circuits in a chip work **at the same time**, all the time. There's no "next line" - there's only one question: what is every component doing, at every given moment.
 
-- Which data flows where
-- What happens at each clock cycle
-- Which signals change and when
-- How a component responds to different inputs
+This is a deep difference in thinking, not just a technical one. Anyone coming from a software background has to actively unlearn the habit of reading top to bottom.
 
-RTL is essentially **a language for describing circuit behavior**.
+## Software Has Runtime. Hardware Has a Clock
 
-It's not executable code,
-but a logical blueprint explained through text.
+In software, "how long does this take" is a question answered after the fact - profiling, measurements, optimization.
 
-## Wait - What Does This Look Like?
+In hardware, this question is **part of the design itself**, before a chip even exists.
 
-Very simply, RTL includes:
+Every operation in hardware is tied to a clock cycle. If something can't complete within its allotted time, the chip simply won't work at the required frequency. There's no "well, it's a bit slower" - there's success or failure.
 
-### 1. Inputs and Outputs
-That define what the component receives and returns.
+## Software Can Be Fixed. Hardware Almost Can't
 
-### 2. Registers
-Small places that hold information for clock cycles.
+This might be the difference that changes how you think the most.
 
-### 3. Always blocks
-Patterns that describe what happens:
+**In software**: you find a bug, fix a line, push a new release. A fix costs minutes or hours.
 
-- At every clock edge
-- Or at every signal change
-- Or at every other logical operation
+**In hardware**: once the chip goes to manufacturing (Tapeout), nothing can be changed. A mistake discovered too late can cost millions of dollars and months of delay.
 
-### 4. Logic
-"If", "and", "or" connections, data connections, etc.
+The result: in the hardware world, **testing in advance isn't a "nice step" - it's an existential necessity**. That's why, in upcoming posts, we'll see how much time and effort goes into Verification, simulation, and FPGA testing - all before an actual chip exists.
 
-## Why Do We Need RTL?
+## Software Changes Behavior. Hardware Changes Physics
 
-Because it's the way to precisely describe:
+When you modify code, you're changing how software behaves - it stays in the logical world.
 
-**How the hardware will behave before it's created.**
+When you design hardware, every line of RTL eventually becomes:
 
-And only after the behavior is described and verified -
-can it actually be turned into transistors and physical paths.
+- Actual transistors
+- Tiny metal wires
+- Real speed that depends on physical distance and heat
+
+**A small logical change can affect something that sounds completely unrelated - like how much heat the chip generates, or how much power it consumes.**
+
+That's why hardware engineers are constantly thinking about physical resources - area, energy, heat - not just "correct behavior."
+
+## So How Do You "Write" Hardware, If It's Not Code That Runs?
+
+That's the question that will guide us through the rest of this series.
+
+The short answer: you don't write hardware the way you write software. You **describe** it - how it should behave - in a special language called RTL, and only in later stages does that description become gates, transistors, and actual silicon.
+
+This is the difference from which the entire Frontend world begins.
 
 ## A Simple Analogy
 
-Think about building a house.
+Think about the difference between writing a letter and designing a building.
 
-**Software** = building the house through trial and error:
-Code runs → change → run again.
+**A letter (software)**: you can write, delete, change a word, and send a corrected version. Fully flexible.
 
-**Hardware** = must plan before manufacturing:
-Architecture → electrical plan → plumbing plan…
-And only then actual construction.
+**A building (hardware)**: before pouring concrete, you need to know exactly where every wall, every pipe, every electrical wire goes. After pouring - a change means demolition and rebuilding.
 
-**RTL is the architectural plan of hardware.**
-
-## Why Don't We Write Hardware in a Regular Language Like Python?
-
-Because:
-
-- Hardware works **in parallel** (multiple simultaneous operations)
-- Hardware depends on the **clock**
-- Different parts respond **simultaneously** to signals
-- You can't "run" and fix after manufacturing
-- Imprecise description can break physical timing
-
-Hardware is a completely different world from software.
-
-## Therefore, We Use Dedicated Languages Like:
-
-- **Verilog**
-- **VHDL**
-- **SystemVerilog**
-
-They are not "programming" languages, but **"description" languages**.
-
-## How Does RTL Fit Into the Development Process?
-
-This is a big picture that will accompany us throughout the series:
-
-1. Describe logic in RTL
-2. Run simulations to verify it's correct
-3. Verify it works in every scenario
-4. Convert it to physical gates (Synthesis)
-5. Place it on an actual chip (Backend)
-6. Manufacture the actual chip
-
-**RTL is the starting point for all actual hardware.**
+Software is a letter. Hardware is a building.
 
 ## Summary
 
 In this post, we learned:
 
-- Software is code that executes
-- Hardware is behavior that's described
-- RTL is the language that describes this behavior
-- Only after complete description can the chip be built
-- This is the foundation for the entire Frontend world
+- Software runs sequentially, hardware works in parallel
+- In software, runtime is measured after the fact; in hardware, the clock is part of the design itself
+- Fixing software is cheap and fast; fixing hardware is expensive and nearly impossible after manufacturing
+- A logical change in hardware also affects physical reality - area, heat, power consumption
+- These differences are why hardware is **described**, not **written**, the way regular software is
 
 ---
 
-**This is the "Chip Design Journey" series - an in-depth journey into the world of chip design from beginning to manufacturing. In the continuation, we'll dive deeper into chip architecture, Verification, Synthesis, and more.**
+**In the next post, we'll understand what Frontend means in the world of chips, and how everything we learned here translates into an organized workflow.**

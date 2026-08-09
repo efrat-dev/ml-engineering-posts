@@ -82,13 +82,13 @@ First power-on of the chip - and the tests ensuring it works.
 
 ## What Will We Gain from the Series?
 
-✅ **Deep but simple understanding** of all stages
+**Deep but simple understanding** of all stages
 
-✅ **Precise professional language** you can use with VLSI engineers
+**Precise professional language** you can use with VLSI engineers
 
-✅ **System-level view** connecting hardware, software, and architecture
+**System-level view** connecting hardware, software, and architecture
 
-✅ **Ability to understand** the biggest challenges in the chip world
+**Ability to understand** the biggest challenges in the chip world
 
 ## Who Is This Series For?
 

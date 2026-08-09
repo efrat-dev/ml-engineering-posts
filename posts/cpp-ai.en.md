@@ -54,8 +54,8 @@ usually run the code in C++ to handle the load and save resources.
 
 | Aspect           | Python       | C++             |
 |------------------|--------------|-----------------|
-| Development Ease | ✅ High       | ⚙️ Lower         |
-| Performance      | ⚙️ Good      | 🚀 Excellent     |
+| Development Ease | High         | Lower           |
+| Performance      | Good         | Excellent       |
 | Memory Control   | Hidden       | Full Control    |
 | Hardware Access  | Indirect     | Direct (CUDA, OpenCL, etc.) |
 | Main Use         | Research and Experimentation | Production and Deployment |

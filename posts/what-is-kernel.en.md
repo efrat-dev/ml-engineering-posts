@@ -31,7 +31,7 @@ A model user doesn’t need to know how exactly a convolution is performed.
 The Kernel handles all the details - from memory allocation to processor instructions.
 
 3. Because every hardware requires tailored Kernels
-CPU, GPU, TPU, or a dedicated accelerator like NR1 -
+CPU, GPU, TPU, or another dedicated accelerator -
 each has its own Kernels optimized for its configuration and architecture.
 
 ### Conceptual Example (Not Code)

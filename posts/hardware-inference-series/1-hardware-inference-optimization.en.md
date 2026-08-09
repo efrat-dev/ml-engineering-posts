@@ -26,7 +26,7 @@ A model is just a collection of computations. But behind every prediction lies a
 processors, memory, communication between components, process management - all of which directly impact two critical metrics:
 
 - **Latency** - How long it takes to return an answer.
-- **Throughput (TPS)** - How many predictions can be processed per second.
+- **Throughput (TPS)** - How many tokens can be generated per second.
 
 ## Where Does Performance “Leak”?
 

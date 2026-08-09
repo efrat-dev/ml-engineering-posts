@@ -32,7 +32,7 @@ and CUDA handles the rest: distributing work among thousands of cores, synchroni
 ## How Did This Change the AI World?
 
 Before CUDA, training neural networks was slow and cumbersome.
-After CUDA - PyTorch, TensorFlow appeared, and these monsters started using GPUs directly.
+After CUDA, PyTorch and TensorFlow appeared, and these tools started using GPUs directly.
 
 This was the key:
 you no longer need to know CUDA itself -
@@ -66,19 +66,19 @@ All in a fraction of a second, without you needing to understand all the interna
 
 ## Are There Alternatives to CUDA?
 
-- **ROCm** - AMD's, supports their cards.
-- **OneAPI** - Intel's, trying to create an open standard.
+- **ROCm** - AMD's platform, supports their own cards.
+- **OneAPI** - Intel's platform, trying to create an open standard.
 - **OpenCL** - Open, but less efficient and less supported.
 
 But there's no doubt: **CUDA is still the de facto standard**.
 Almost every AI library was built first for CUDA,
-and the official support is particularly strong.
+and official support is particularly strong.
 
 ## Summary
 
 CUDA is the bridge between the GPU and the developer.
 Without it, most of what we know today about AI simply wouldn't have happened.
-And thanks to it, even a developer who knows nothing about hardware - can train a model in record time.
+And thanks to it, even a developer who knows nothing about hardware can train a model in record time.
 
 ---
 

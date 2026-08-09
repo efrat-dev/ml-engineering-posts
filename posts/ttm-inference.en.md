@@ -2,7 +2,7 @@
 language: "en"
 title: "TTM - Why Time To Market is a Critical Part of Inference Engineering and AI Solutions"
 categories:
-  - "אסטרטגיה עסקית"
+  - "Business Strategy"
 tags:
   - "TTM"
 previousPost: "inference-engines.en"

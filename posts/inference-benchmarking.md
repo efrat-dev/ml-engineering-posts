@@ -4,7 +4,7 @@ title: "מה זה בעצם Inference Benchmarking - ולמה זה כל כך חש
 categories:
   - "מדידת הסקה"
 tags:
-  -  "ביצועים"
+  - "ביצועים"
   - "Throughput"
   - "Latency"
 previousPost: "docker-cicd-benchmarking"

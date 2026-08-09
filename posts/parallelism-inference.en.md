@@ -10,7 +10,7 @@ slug: "parallelism-inference-en"
 ---
 
 
-# Parallelism - How to Make a Computer “Think” in Multiple Directions Simultaneously
+# Parallelism - How to Run Models in Parallel?
 
 When we run an AI model, it needs to process a lot of mathematical computations.
 To make this happen quickly - we want different parts of the computation to work in parallel, not one after the other.

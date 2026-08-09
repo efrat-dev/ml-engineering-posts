@@ -8,7 +8,7 @@ tags:
   - "Inference Deep Dive"
 series: "Inference Deep Dive"
 previousPost: "1-training-inference.en"
-nextPost: "3-behind-the-scenes-inference"
+nextPost: "3-behind-the-scenes-inference-en"
 slug: "2-how-inference-works-en"
 ---
 
@@ -43,7 +43,7 @@ Each of these steps is an opportunity to improve performance:
 
 - How data flows between layers.
 - How memory is accessed.
-- And how transitions are managed between the CPU, GPU, or a dedicated accelerator like NR1.
+- And how transitions are managed between the CPU, GPU, or a dedicated accelerator like a TPU.
 
 Optimizing these steps is the core of the field of Inference Optimization.
 

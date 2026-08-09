@@ -43,11 +43,11 @@ All these components create a closed and highly efficient ecosystem.
 Today, NVIDIA's leading GPU for AI training is the H100 Tensor Core.
 Its capabilities:
 
-- 60 trillion operations per second (in FP8 precision)
+- ~2,000 trillion operations per second (in FP8 precision, with sparsity)
 - Ultra-fast memory (HBM3)
 - Support for Transformer Acceleration technologies - especially for LLMs
 
-A server with 8× H100 can cost over a million dollars,
+A server with 8× H100 can cost several hundred thousand dollars,
 but it can also train massive models in days instead of weeks.
 
 ## The Monopoly and Criticism
@@ -62,7 +62,7 @@ is still the most sophisticated.
 - **AMD** - With the MI300 series, but the ecosystem is weaker.
 - **Intel** - Trying with Gaudi, but still early.
 - **AWS Trainium / Inferentia** - Amazon's accelerators, but only within their cloud.
-- **Google TPU** - Strong for training, but also closed to the organization.
+- **Google TPU** - Strong for training, but limited to Google's internal use.
 
 Still, NVIDIA remains the de facto standard.
 

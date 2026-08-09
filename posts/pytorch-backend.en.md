@@ -5,7 +5,7 @@ categories:
   - "Pytorch"
 tags:
   - "Python"
-  - "AI Framworks"
+  - "AI Frameworks"
 previousPost: "sandbox-inference.en"
 slug: "pytorch-backend-en"
 ---

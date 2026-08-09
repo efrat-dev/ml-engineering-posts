@@ -62,10 +62,10 @@ Afterward, you can run the same graph repeatedly with different data.
 
 | Scenario          | Dynamic Graph | Static Graph     |
 |-------------------|---------------|------------------|
-| Research & Development | ✅ Yes        | ❌ Less suitable |
-| Production / Inference | ❌ Less efficient | ✅ Recommended    |
-| Writing Convenience | ✅ Very       | ⚠️ Requires pre-definition |
-| Performance        | ⚠️ Moderate   | 🚀 Very high     |
+| Research & Development | Yes         | Less suitable    |
+| Production / Inference | Less efficient | Recommended  |
+| Writing Convenience | Very        | Requires pre-definition |
+| Performance        | Moderate      | Very high        |
 
 ## Bottom Line:
 

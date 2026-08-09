@@ -8,7 +8,7 @@ tags:
   - "Optimization"
 series: "Inference Deep Dive"
 previousPost: "3-behind-the-scenes-inference.en"
-nextPost: "5-inference-optimization"
+nextPost: "5-inference-optimization-en"
 slug: "4-bottlenecks-in-inference-en"
 ---
 

@@ -2,7 +2,7 @@
 language: "en"
 title: "Why Does Your Model “Feel Slow”?"
 categories:
-  - "Profilig"
+  - "Profiling"
 tags:
   - "Bottleneck"
   - "Performance Benchmark"

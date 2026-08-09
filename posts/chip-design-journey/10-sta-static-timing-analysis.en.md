@@ -38,8 +38,8 @@ Or: static timing analysis.
 
 Modern chips work at insane speeds:
 
-- 1GHz = one thousand million operations per second
-- 5GHz = five thousand million operations per second
+- 1GHz = one billion operations per second
+- 5GHz = five billion operations per second
 
 In each clock cycle:
 

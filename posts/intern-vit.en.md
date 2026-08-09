@@ -73,7 +73,7 @@ but this time:
 - They know how all the squares connect to form a larger shape,
 - And they can understand both the broad context and the fine details.
 
-### The Result: More Accurate Analysis of Complex Images.
+**The Result:** More accurate analysis of complex images.
 
 ## Where is InternViT Useful?
 

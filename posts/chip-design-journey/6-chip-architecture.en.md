@@ -125,8 +125,8 @@ Because without planning:
 - You don't know what the requirements are
 - You don't know what's important and what's secondary
 
-**Architecture is the "story".**
-**RTL is the "chapter".**
+**Architecture is the plan.**
+**RTL is the execution.**
 
 ## An Illustrative Analogy
 

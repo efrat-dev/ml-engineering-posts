@@ -20,7 +20,7 @@ slug: "8-resource-optimization-en"
 In any inference system, every small change - in cores, memory, or the way resources are allocated - impacts two main metrics:
 
 - **Latency** - How long it takes for a single request to complete.
-- **TPS (Transactions Per Second)** - How many predictions the system can process per second.
+- **TPS (Tokens Per Second)** - how many tokens the system can generate per second.
 
 To improve one, you often sacrifice the other. Understanding this balance is the essence of true optimization.
 
@@ -63,4 +63,4 @@ To understand where the bottleneck is, you need to examine several layers:
 No component - NUMA, cores, or resources - stands alone.
 Only by understanding how they all interact can you achieve true optimization:
 A system where every computation is utilized, every thread is in the right place,
-and every prediction is delivered on time - without wasting a single microsecond.
+and every token is delivered on time - without wasting a single microsecond.

@@ -33,7 +33,7 @@ An accelerator is a component specifically designed to perform very specific mat
 for example, matrix multiplication and addition, which appear in almost every layer of a neural network.
 
 Thanks to its design, the accelerator can perform thousands or even millions of operations simultaneously.
-That's why, instead of calculating a model's answer in 10 seconds, it can finish it in less than a second.
+That's why a computation that would take 10 seconds without it can be finished by the accelerator in less than a second.
 
 ## Examples from the Real World
 
@@ -59,4 +59,4 @@ but the accelerator is the one doing the real heavy lifting.
 
 ---
 
-**This is the "AI Hardware & Infrastructure" series - an in-depth journey into the hardware infrastructure behind modern artificial intelligence. In the continuation, we'll learn about GPU Clusters, the building blocks of data centers, and the broader ecosystem that connects them all.**
+**This is the "AI Hardware & Infrastructure" series - an in-depth journey into the hardware infrastructure behind modern artificial intelligence. Going forward, we'll learn about GPU Clusters, the building blocks of data centers, and the broader ecosystem that connects them all.**

@@ -6,8 +6,8 @@ categories:
 tags:
   - "Throughput"
   - "Latency"
-previousPost: "bottlenecks-in-inference"
-nextPost: "behind-the-scenes-inference"
+previousPost: "inference-deep-dive/4-bottlenecks-in-inference"
+nextPost: "inference-deep-dive/3-behind-the-scenes-inference"
 slug: "measuring-ai-model-speed"
 ---
 

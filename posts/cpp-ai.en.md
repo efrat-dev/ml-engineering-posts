@@ -6,7 +6,7 @@ categories:
 tags:
   - "C++"
 previousPost: "python-ai.en"
-nextPost: "inference-optimization.en"
+nextPost: "inference-deep-dive/5-inference-optimization.en"
 slug: "cpp-ai-en"
 ---
 

@@ -7,7 +7,6 @@ tags:
   - "Docker"
   - "קונטיינרים"
 series: "Docker למדידת ביצועים"
-previousPost: "null"
 nextPost: "2-docker-images-containers"
 slug: "1-docker-intro"
 ---

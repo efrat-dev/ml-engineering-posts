@@ -8,6 +8,7 @@ tags:
   - "תכנון מערכת"
 series: "מסע לעולם עיצוב השבבים"
 previousPost: "chip-design-journey/5-rtl-for-beginners"
+nextPost: "chip-design-journey/7-verification"
 slug: "6-chip-architecture"
 ---
 

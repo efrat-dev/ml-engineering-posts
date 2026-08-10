@@ -7,6 +7,7 @@ tags:
   - "gRPC"
   - "Protobuf"
 previousPost: "what-to-do-after-profiling"
+nextPost: "mlops-production"
 slug: "grpc-ai-communication"
 ---
 

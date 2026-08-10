@@ -7,6 +7,7 @@ tags:
   - "Inference Engine"
   - "Serving"
 previousPost: "serving-ai.en"
+nextPost: "ai-deployment.en"
 slug: "vllm-efficient-serving-en"
 ---
 

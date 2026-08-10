@@ -8,6 +8,7 @@ tags:
   - "Post-Silicon"
 series: "Chip Design Journey"
 previousPost: "chip-design-journey/12-tapeout.en"
+nextPost: "chip-design-journey/14-series-summary.en"
 slug: "13-fab-bringup-post-silicon-en"
 ---
 

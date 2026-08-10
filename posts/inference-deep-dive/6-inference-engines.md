@@ -8,7 +8,6 @@ tags:
   - "vLLM"
 series: "מסע אל עולם ההסקה"
 previousPost: "5-inference-optimization"
-nextPost: "null"
 slug: "6-inference-engines"
 ---
 

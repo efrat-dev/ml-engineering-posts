@@ -7,8 +7,7 @@ tags:
   - "Docker"
   - "CI/CD"
 series: "Docker for Benchmarking"
-previousPost: "4-docker-inference-benchmarking.en"
-nextPost: "null"
+previousPost: "4-docker-inference-benchmarking-en"
 slug: "5-docker-cicd-benchmarking-en"
 ---
 

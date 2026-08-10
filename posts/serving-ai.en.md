@@ -6,6 +6,7 @@ categories:
 tags:
   - "Serving"
   - "Batching"
+nextPost: "vllm-efficient-serving.en"
 slug: "serving-ai-en"
 ---
 

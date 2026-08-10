@@ -5,7 +5,8 @@ categories:
   - "Inference Optimization"
 tags:
   - "Concurrency"
-previousPost: "vllm-efficient-serving.en"
+previousPost: "ai-deployment.en"
+nextPost: "parallelism-inference.en"
 slug: "concurrency-inference-en"
 ---
 

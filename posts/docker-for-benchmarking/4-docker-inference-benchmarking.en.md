@@ -7,8 +7,8 @@ tags:
   - "Docker"
   - "Benchmarking"
 series: "Docker for Benchmarking"
-previousPost: "3-docker-benchmarking-setup.en"
-nextPost: "5-docker-cicd-benchmarking.en"
+previousPost: "3-docker-benchmarking-setup-en"
+nextPost: "5-docker-cicd-benchmarking-en"
 slug: "4-docker-inference-benchmarking-en"
 ---
 

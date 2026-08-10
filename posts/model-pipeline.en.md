@@ -6,7 +6,8 @@ categories:
 tags:
   - "Model Pipeline"
   - "MLOps"
-previousPost: "ecosystem.en"
+previousPost: "ai-hardware-infrastructure/7-ecosystem.en"
+nextPost: "scaling-ai.en"
 slug: "model-pipeline-en"
 ---
 

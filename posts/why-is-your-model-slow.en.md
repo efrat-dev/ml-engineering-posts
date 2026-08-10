@@ -6,7 +6,7 @@ categories:
 tags:
   - "Bottleneck"
   - "Performance Benchmark"
-previousPost: "what-is-an-accelerator.en"
+previousPost: "ai-hardware-infrastructure/4-what-is-an-accelerator.en"
 nextPost: "what-to-do-after-profiling.en"
 slug: "why-is-your-model-slow-en"
 ---

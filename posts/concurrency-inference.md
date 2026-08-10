@@ -5,7 +5,8 @@ categories:
   - "אופטימיזציית הסקה"
 tags:
   - "Concurrency"
-previousPost: "vllm-efficient-serving"
+previousPost: "ai-deployment"
+nextPost: "parallelism-inference"
 slug: "concurrency-inference"
 ---
 

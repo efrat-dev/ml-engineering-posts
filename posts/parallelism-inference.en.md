@@ -6,6 +6,7 @@ categories:
 tags:
   - "Parallelism"
 previousPost: "concurrency-inference.en"
+nextPost: "tensor-parallelism-en"
 slug: "parallelism-inference-en"
 ---
 

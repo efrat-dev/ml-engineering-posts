@@ -7,8 +7,8 @@ tags:
   - "Throughput"
   - "Latency"
   - "Performance"
-previousPost: "docker-cicd-benchmarking.en"
-nextPost: "inference-engines.en"
+previousPost: "docker-for-benchmarking/5-docker-cicd-benchmarking.en"
+nextPost: "inference-deep-dive/6-inference-engines.en"
 slug: "inference-benchmarking-en"
 ---
 

@@ -8,6 +8,7 @@ tags:
   - "Backend"
 series: "Chip Design Journey"
 previousPost: "chip-design-journey/8-synthesis.en"
+nextPost: "chip-design-journey/10-sta-static-timing-analysis.en"
 slug: "9-place-and-route-en"
 ---
 

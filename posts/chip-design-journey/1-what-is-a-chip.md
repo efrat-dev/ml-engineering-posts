@@ -7,6 +7,7 @@ tags:
   - "שבבים"
   - "חומרה"
 series: "מסע לעולם עיצוב השבבים"
+previousPost: "chip-design-journey/0-introduction"
 nextPost: "chip-design-journey/2-what-is-soc"
 slug: "1-what-is-a-chip"
 ---

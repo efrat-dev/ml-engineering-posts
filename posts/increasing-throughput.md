@@ -6,8 +6,8 @@ categories:
 tags:
   - "ביצועים"
   - "Throughput"
-previousPost: "behind-the-scenes-inference"
-nextPost: "how-inference-works"
+previousPost: "inference-deep-dive/3-behind-the-scenes-inference"
+nextPost: "inference-deep-dive/2-how-inference-works"
 slug: "increasing-throughput"
 ---
 

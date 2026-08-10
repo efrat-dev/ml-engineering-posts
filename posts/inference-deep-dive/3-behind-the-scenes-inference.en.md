@@ -8,7 +8,7 @@ tags:
   - "Decode"
   - "KV Cache"
 series: "Inference Deep Dive"
-previousPost: "2-how-inference-works.en"
+previousPost: "2-how-inference-works-en"
 nextPost: "4-bottlenecks-in-inference-en"
 slug: "3-behind-the-scenes-inference-en"
 ---

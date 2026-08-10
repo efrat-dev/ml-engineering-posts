@@ -6,6 +6,7 @@ categories:
 tags:
   - "חישוב מקבילי"
 previousPost: "concurrency-inference"
+nextPost: "tensor-parallelism"
 slug: "parallelism-inference"
 ---
 

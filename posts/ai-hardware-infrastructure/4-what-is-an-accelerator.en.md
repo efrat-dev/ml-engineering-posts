@@ -8,6 +8,7 @@ tags:
   - "GPU"
 series: "AI Hardware & Infrastructure"
 previousPost: "ai-hardware-infrastructure/3-cuda-nvidia.en"
+nextPost: "ai-hardware-infrastructure/5-gpu-cluster.en"
 slug: "4-what-is-an-accelerator-en"
 ---
 

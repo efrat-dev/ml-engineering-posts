@@ -7,6 +7,7 @@ tags:
   - "Chips"
   - "Hardware"
 series: "Chip Design Journey"
+previousPost: "chip-design-journey/0-introduction.en"
 nextPost: "chip-design-journey/2-what-is-soc.en"
 slug: "1-what-is-a-chip-en"
 ---

@@ -6,7 +6,6 @@ categories:
 tags:
   - "אימון מודלים"
 series: "מסע אל עולם ההסקה"
-previousPost: "null"
 nextPost: "2-how-inference-works"
 slug: "1-training-inference"
 ---

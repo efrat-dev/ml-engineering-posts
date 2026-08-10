@@ -6,6 +6,7 @@ categories:
 tags:
   - "סביבות בדיקה"
 previousPost: "ttm-inference"
+nextPost: "pytorch-backend"
 slug: "sandbox-inference"
 ---
 

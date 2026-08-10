@@ -6,7 +6,7 @@ categories:
 tags:
   - "Provisioning"
   - "Resources"
-previousPost: "parallelism-inference.en"
+previousPost: "tensor-parallelism-en"
 slug: "provisioning-inference-en"
 ---
 

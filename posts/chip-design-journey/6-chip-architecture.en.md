@@ -8,6 +8,7 @@ tags:
   - "System Design"
 series: "Chip Design Journey"
 previousPost: "chip-design-journey/5-rtl-for-beginners.en"
+nextPost: "chip-design-journey/7-verification.en"
 slug: "6-chip-architecture-en"
 ---
 

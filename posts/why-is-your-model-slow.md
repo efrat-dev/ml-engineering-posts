@@ -6,7 +6,7 @@ categories:
 tags:
   - "מדידת ביצועים"
   - "צוואר בקבוק"
-previousPost: "what-is-an-accelerator"
+previousPost: "ai-hardware-infrastructure/4-what-is-an-accelerator"
 nextPost: "what-to-do-after-profiling"
 slug: "why-is-your-model-slow"
 ---

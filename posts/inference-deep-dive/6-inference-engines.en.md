@@ -7,8 +7,7 @@ tags:
   - "Engines"
   - "vLLM"
 series: "Inference Deep Dive"
-previousPost: "5-inference-optimization.en"
-nextPost: "null"
+previousPost: "5-inference-optimization-en"
 slug: "6-inference-engines-en"
 ---
 

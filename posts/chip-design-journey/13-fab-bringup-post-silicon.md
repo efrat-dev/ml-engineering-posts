@@ -8,6 +8,7 @@ tags:
   - "Post-Silicon"
 series: "מסע לעולם עיצוב השבבים"
 previousPost: "chip-design-journey/12-tapeout"
+nextPost: "chip-design-journey/14-series-summary"
 slug: "13-fab-bringup-post-silicon"
 ---
 

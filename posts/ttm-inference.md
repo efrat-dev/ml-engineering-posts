@@ -5,7 +5,8 @@ categories:
   - "Business Strategy"
 tags:
   - "TTM"
-previousPost: "inference-engines"
+previousPost: "inference-deep-dive/6-inference-engines"
+nextPost: "sandbox-inference"
 slug: "ttm-inference"
 ---
 

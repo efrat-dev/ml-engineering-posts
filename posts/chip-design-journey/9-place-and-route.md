@@ -8,6 +8,7 @@ tags:
   - "Backend"
 series: "מסע לעולם עיצוב השבבים"
 previousPost: "chip-design-journey/8-synthesis"
+nextPost: "chip-design-journey/10-sta-static-timing-analysis"
 slug: "9-place-and-route"
 ---
 

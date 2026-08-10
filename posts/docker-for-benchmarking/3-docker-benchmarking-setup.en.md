@@ -7,8 +7,8 @@ tags:
   - "Docker"
   - "Benchmarking"
 series: "Docker for Benchmarking"
-previousPost: "2-docker-images-containers.en"
-nextPost: "4-docker-inference-benchmarking.en"
+previousPost: "2-docker-images-containers-en"
+nextPost: "4-docker-inference-benchmarking-en"
 slug: "3-docker-benchmarking-setup-en"
 ---
 

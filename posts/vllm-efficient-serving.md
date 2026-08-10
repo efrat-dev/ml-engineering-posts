@@ -7,6 +7,7 @@ tags:
   - "מנוע הסקה"
   - "Serving"
 previousPost: "serving-ai"
+nextPost: "ai-deployment"
 slug: "vllm-efficient-serving"
 ---
 

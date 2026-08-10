@@ -6,7 +6,7 @@ categories:
 tags:
   - "ONNX"
   - "Interoperability"
-previousPost: "dynamic-static-graph.en"
+previousPost: "eager-execution.en"
 slug: "onnx-en"
 ---
 

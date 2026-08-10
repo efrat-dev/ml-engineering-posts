@@ -7,7 +7,7 @@ tags:
   - "Optimization"
   - "Inference Deep Dive"
 series: "Inference Deep Dive"
-previousPost: "1-training-inference.en"
+previousPost: "1-training-inference-en"
 nextPost: "3-behind-the-scenes-inference-en"
 slug: "2-how-inference-works-en"
 ---

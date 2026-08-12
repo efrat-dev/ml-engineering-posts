@@ -5,7 +5,6 @@ categories:
   - "שפות תכנות"
 tags:
   - "Python"
-previousPost: "ai-hardware-infrastructure/3-cuda-nvidia"
 nextPost: "cpp-ai"
 slug: "python-ai"
 ---

@@ -5,7 +5,6 @@ categories:
   - "Programming Languages"
 tags:
   - "Python"
-previousPost: "ai-hardware-infrastructure/3-cuda-nvidia.en"
 nextPost: "cpp-ai.en"
 slug: "python-ai-en"
 ---

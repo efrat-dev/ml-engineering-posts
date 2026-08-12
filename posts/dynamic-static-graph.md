@@ -5,8 +5,8 @@ categories:
   - "גרפים"
 tags:
   - "גרף דינמי"
-previousPost: "inference-deep-dive/5-inference-optimization"
-nextPost: "eager-execution"
+previousPost: "computation-graph"
+nextPost: "onnx"
 slug: "dynamic-static-graph"
 ---
 

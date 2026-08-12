@@ -56,6 +56,16 @@ Two important metrics:
 If Throughput increases without Latency growing - scaling is working well.
 If Throughput stalls or Latency spikes - it’s a sign to stop and check the architecture.
 
+## The Connection to the NIC
+
+Both types of scaling share a factor that's easy to overlook: the network interface card (NIC).
+
+In Vertical Scaling, when you add more cores, memory, and accelerators to a single server, the NIC is what has to stream data between the internal components (GPU, DPU, CPU) without becoming a bottleneck itself. A NIC that's too slow will leave accelerators waiting for data, no matter how powerful the rest of the hardware is.
+
+In Horizontal Scaling the challenge is even bigger: the performance of the entire cluster depends on the NICs' ability to move data between servers quickly and accurately. An overloaded NIC creates latency between servers - the exact same "expensive coordination" described above, except here the specific culprit is the network. That's why large Scale Out systems use SmartNICs, which handle data processing, routing, and prioritization before the data even reaches the CPU.
+
+In other words: in both directions, a fast, well-tuned NIC is what separates infrastructure that grows - from infrastructure that struggles to breathe.
+
 ## Conclusion
 
 Scaling isn’t magic.

@@ -5,8 +5,8 @@ categories:
   - "Graphs"
 tags:
   - "Dynamic Graph"
-previousPost: "inference-deep-dive/5-inference-optimization.en"
-nextPost: "eager-execution.en"
+previousPost: "computation-graph-en"
+nextPost: "onnx-en"
 slug: "dynamic-static-graph-en"
 ---
 

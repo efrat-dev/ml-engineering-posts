@@ -6,7 +6,7 @@ categories:
 tags:
   - "ONNX"
   - "תאימות"
-previousPost: "eager-execution"
+previousPost: "dynamic-static-graph"
 slug: "onnx"
 ---
 

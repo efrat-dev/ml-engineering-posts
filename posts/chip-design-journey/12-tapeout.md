@@ -8,7 +8,7 @@ tags:
   - "Production"
 series: "מסע לעולם עיצוב השבבים"
 previousPost: "chip-design-journey/11-simulation-fpga-emulation"
-nextPost: "chip-design-journey/13-fab-bringup-post-silicon"
+nextPost: "chip-design-journey/12b-dft"
 slug: "12-tapeout"
 ---
 

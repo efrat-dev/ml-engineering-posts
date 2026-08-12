@@ -17,8 +17,8 @@ slug: "6-thread-affinity-en"
 
 # Thread Affinity - How to Bind Cores Smartly
 
-In the previous post, we explained why it’s important for each thread to stay bound to a specific core - to preserve the cache and avoid performance loss.
-Now let’s dive into the practical question: how do you do it right?
+In the previous post, we saw why moving a thread between cores costs performance.
+Now let’s dive into the practical question: how do you bind it right?
 
 ## What is Thread Affinity?
 

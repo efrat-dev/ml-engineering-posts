@@ -8,7 +8,7 @@ tags:
   - "Production"
 series: "Chip Design Journey"
 previousPost: "chip-design-journey/11-simulation-fpga-emulation.en"
-nextPost: "chip-design-journey/13-fab-bringup-post-silicon.en"
+nextPost: "chip-design-journey/12b-dft.en"
 slug: "12-tapeout-en"
 ---
 

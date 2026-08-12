@@ -94,3 +94,35 @@ while IFS= read -r -d '' f; do
     echo "MISMATCH: $f has nextPost=$nxt, but $nextfile has previousPost='$prev' (doesn't resolve back to $f)"
   fi
 done < <(find "$POSTS_DIR" -name '*.md' -print0)
+
+echo
+echo "== two posts claiming the same previousPost target =="
+declare -A PREV_CLAIMANTS
+while IFS= read -r -d '' f; do
+  prev=$(get_field "$f" previousPost)
+  [ -z "$prev" ] || [ "$prev" = "null" ] && continue
+  PREV_CLAIMANTS["$prev"]+="$f;"
+done < <(find "$POSTS_DIR" -name '*.md' -print0)
+for key in "${!PREV_CLAIMANTS[@]}"; do
+  claimants="${PREV_CLAIMANTS[$key]}"
+  count=$(grep -o ';' <<< "$claimants" | wc -l)
+  if [ "$count" -gt 1 ]; then
+    echo "COLLISION: previousPost='$key' claimed by: ${claimants%;}"
+  fi
+done
+
+echo
+echo "== two posts claiming the same nextPost target =="
+declare -A NEXT_CLAIMANTS
+while IFS= read -r -d '' f; do
+  nxt=$(get_field "$f" nextPost)
+  [ -z "$nxt" ] || [ "$nxt" = "null" ] && continue
+  NEXT_CLAIMANTS["$nxt"]+="$f;"
+done < <(find "$POSTS_DIR" -name '*.md' -print0)
+for key in "${!NEXT_CLAIMANTS[@]}"; do
+  claimants="${NEXT_CLAIMANTS[$key]}"
+  count=$(grep -o ';' <<< "$claimants" | wc -l)
+  if [ "$count" -gt 1 ]; then
+    echo "COLLISION: nextPost='$key' claimed by: ${claimants%;}"
+  fi
+done

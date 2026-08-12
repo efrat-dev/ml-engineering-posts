@@ -7,6 +7,7 @@ tags:
   - "MLOps"
   - "Monitoring"
 previousPost: "grpc-ai-communication.en"
+nextPost: "data-drift.en"
 slug: "mlops-production-en"
 ---
 

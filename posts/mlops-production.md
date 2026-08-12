@@ -7,6 +7,7 @@ tags:
   - "MLOps"
   - "ניטור"
 previousPost: "grpc-ai-communication"
+nextPost: "data-drift"
 slug: "mlops-production"
 ---
 

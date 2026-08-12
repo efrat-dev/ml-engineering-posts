@@ -7,6 +7,7 @@ tags:
   - "Python"
   - "AI Frameworks"
 previousPost: "sandbox-inference.en"
+nextPost: "pytorch-tensor-views-en"
 slug: "pytorch-backend-en"
 ---
 
